@@ -86,24 +86,28 @@ document.addEventListener('DOMContentLoaded', function() {
         // Vérifier si on est sur mobile
         if (window.innerWidth > 768) return;
 
-        const experienceSection = document.querySelector('#experience');
-        const timelineContents = document.querySelectorAll('.experience .timeline-content');
-        
-        if (!experienceSection || timelineContents.length === 0) return;
+        const timelineItems = document.querySelectorAll('.experience .timeline-item');
+        if (timelineItems.length === 0) return;
+
+        // Fallback si IntersectionObserver n'est pas dispo : on affiche tout
+        if (typeof IntersectionObserver === 'undefined') {
+            timelineItems.forEach(item => {
+                const content = item.querySelector('.timeline-content');
+                if (content) content.classList.add('animate-in');
+            });
+            return;
+        }
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Déclencher l'animation pour tous les timeline-content
-                    timelineContents.forEach(content => {
-                        content.classList.add('animate-in');
-                    });
-                    observer.unobserve(entry.target);
-                }
+                if (!entry.isIntersecting) return;
+                const content = entry.target.querySelector('.timeline-content');
+                if (content) content.classList.add('animate-in');
+                observer.unobserve(entry.target);
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
 
-        observer.observe(experienceSection);
+        timelineItems.forEach(item => observer.observe(item));
     }
 
     // Initialisation AOS si disponible
