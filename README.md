@@ -19,8 +19,9 @@ index.html        # EN  (généré, ne pas éditer à la main)
 index-fr.html     # FR  (généré, ne pas éditer à la main)
 styles.css        # design (variables CSS + classes), thème sombre
 script.js         # interactions vanilla : reveal au scroll, compteurs, scroll-spy
-favicon.svg/.ico  # favicon
-og-image.png      # image Open Graph / Twitter
+favicon.svg/.ico  # favicon (monogramme « P »)
+apple-touch-icon.png  # icône iOS (180×180)
+og-image.png      # image Open Graph / Twitter (source : og-image.svg)
 CNAME             # domaine personnalisé
 sitemap.xml / robots.txt
 ```
