@@ -138,7 +138,6 @@ const CONTENT = {
       now: [
         { tag: "research", title: "Post-doc RAUC · UPJV", desc: "Predicting post-operative complications for digestive surgical emergencies, with Amiens University Hospital." },
         { tag: "product", title: "Solis — AI ERP for SMBs", desc: "An AI ERP for artisans & small firms: quotes, invoices, e-invoicing, voice dictation (Whisper), OCR." },
-        { tag: "product", title: "Boussole MVP — Q4 2026", desc: "AI assistant for French benefits (60+ via OpenFisca) and legal recourse. MVP shipping in November." },
       ],
     },
     work: {
@@ -245,7 +244,6 @@ const CONTENT = {
       now: [
         { tag: "recherche", title: "Post-doc RAUC · UPJV", desc: "Prédiction des complications post-opératoires pour les urgences chirurgicales digestives, avec le CHU d'Amiens." },
         { tag: "produit", title: "Solis — ERP IA pour TPE", desc: "Un ERP IA pour artisans & TPE : devis, factures, facturation électronique, dictée vocale (Whisper), OCR." },
-        { tag: "produit", title: "MVP Boussole — T4 2026", desc: "Assistant IA pour les aides françaises (60+ via OpenFisca) et les recours juridiques. MVP livré en novembre." },
       ],
     },
     work: {
