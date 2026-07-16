@@ -35,11 +35,11 @@
   <text x="76" y="272" fill="#ffffff" font-size="118" font-weight="700" letter-spacing="-4">Pierre Moreau</text>
 
   <!-- role -->
-  <text x="80" y="330" fill="#e9ecf3" font-size="38" font-weight="500" letter-spacing="-0.3">PhD in Machine Learning <tspan fill="#9db0ff">·</tspan> AI Healthcare Engineer</text>
+  <text x="80" y="330" fill="#e9ecf3" font-size="38" font-weight="500" letter-spacing="-0.3">Computer-science PhD <tspan fill="#9db0ff">·</tspan> Healthcare AI Engineer</text>
 
   <!-- tagline -->
-  <text x="80" y="392" fill="#9aa4b6" font-family="'IBM Plex Sans',Arial,sans-serif" font-size="25">AI researcher specialised in healthcare — LLM &amp; RAG systems, medical</text>
-  <text x="80" y="426" fill="#9aa4b6" font-family="'IBM Plex Sans',Arial,sans-serif" font-size="25">imaging and generative AI.</text>
+  <text x="80" y="392" fill="#9aa4b6" font-family="'IBM Plex Sans',Arial,sans-serif" font-size="25">AI researcher specialised in machine learning &amp; healthcare — LLM/RAG</text>
+  <text x="80" y="426" fill="#9aa4b6" font-family="'IBM Plex Sans',Arial,sans-serif" font-size="25">systems, medical imaging and generative AI.</text>
 
   <!-- chips -->
   <g transform="translate(80,486)" font-family="'IBM Plex Mono',monospace" font-size="19">

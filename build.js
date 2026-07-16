@@ -35,15 +35,15 @@ const COMMON = {
 
 const SEO = {
   en: {
-    title: "Pierre Moreau — PhD ML / AI Healthcare Engineer",
+    title: "Pierre Moreau — PhD in Computer Science (ML) · Healthcare AI Engineer",
     description:
-      "PhD in Machine Learning (2023), AI researcher specialized in healthcare. Post-doc at UPJV (RAUC project): generative AI, medical imaging, LLM/RAG systems for healthcare.",
+      "PhD in computer science (2023) specialized in machine learning, AI researcher focused on healthcare. Post-doc at UPJV (RAUC project): generative AI, medical imaging, LLM/RAG systems for healthcare.",
     keywords:
       "Pierre Moreau, machine learning, AI engineer, healthcare AI, LLM, RAG, computer vision, medical imaging, Amiens",
     canonical: SITE + "/index.html",
-    jobTitle: "PhD in Machine Learning, AI Healthcare Engineer",
+    jobTitle: "AI Healthcare Engineer, PhD in Computer Science specialized in Machine Learning",
     personDesc:
-      "AI researcher with a PhD in machine learning, specialized in healthcare. Post-doctoral researcher at UPJV (RAUC project).",
+      "AI researcher with a PhD in computer science, specialized in machine learning and healthcare. Post-doctoral researcher at UPJV (RAUC project).",
     org: "University of Picardie Jules Verne",
     knowsAbout: [
       "Machine Learning", "Deep Learning", "Generative AI", "Large Language Models",
@@ -56,21 +56,21 @@ const SEO = {
     ],
     ogUrl: SITE + "/",
     ogDesc:
-      "AI researcher with a PhD in ML, specialized in healthcare — multimodal learning, generative AI and medical imaging.",
+      "AI researcher with a PhD in computer science, specialised in machine learning & healthcare — multimodal learning, generative AI and medical imaging.",
     ogLocale: "en_US",
     ogLocaleAlt: "fr_FR",
     twDesc: "AI researcher specialized in healthcare — generative AI and medical imaging.",
   },
   fr: {
-    title: "Pierre Moreau — Docteur en ML / Ingénieur IA Santé",
+    title: "Pierre Moreau — Docteur en informatique (ML) · Ingénieur IA Santé",
     description:
-      "Docteur en Machine Learning (2023), chercheur IA spécialisé en santé. Post-doc à l'UPJV (projet RAUC) : IA générative, imagerie médicale, systèmes LLM/RAG pour la santé.",
+      "Docteur en informatique (2023) spécialisé en machine learning, chercheur IA orienté santé. Post-doc à l'UPJV (projet RAUC) : IA générative, imagerie médicale, systèmes LLM/RAG pour la santé.",
     keywords:
       "Pierre Moreau, machine learning, ingénieur IA, IA santé, LLM, RAG, vision par ordinateur, imagerie médicale, Amiens",
     canonical: SITE + "/index-fr.html",
-    jobTitle: "Docteur en Machine Learning, Ingénieur IA Santé",
+    jobTitle: "Ingénieur IA Santé, Docteur en informatique spécialisé en Machine Learning",
     personDesc:
-      "Chercheur IA, docteur en machine learning, spécialisé en santé. Post-doctorant à l'UPJV (projet RAUC).",
+      "Chercheur IA, docteur en informatique spécialisé en machine learning et en santé. Post-doctorant à l'UPJV (projet RAUC).",
     org: "Université de Picardie Jules Verne",
     knowsAbout: [
       "Machine Learning", "Deep Learning", "IA générative", "Large Language Models",
@@ -106,7 +106,7 @@ const CONTENT = {
     hero: {
       status: "Amiens, France · open to collaborations",
       name: "Pierre Moreau",
-      role: "PhD in Machine Learning, engineering AI products for healthcare & business.",
+      role: "Computer-science PhD specialised in machine learning, engineering AI products for healthcare & business.",
       tagline:
         "AI researcher specialised in healthcare — multimodal learning, clinical risk, generative AI. I also ship practical AI products for hospitals and small businesses.",
       ctaContact: "Get in touch",
@@ -199,7 +199,7 @@ const CONTENT = {
         { label: "GitHub", value: "pierre-moreau-phd", href: "https://github.com/pierre-moreau-phd" },
       ],
     },
-    footer: { note: "PhD ML · AI Healthcare Engineer · built in Amiens" },
+    footer: { note: "PhD in CS · ML & Healthcare AI · built in Amiens" },
   },
   fr: {
     nav: [
@@ -213,7 +213,7 @@ const CONTENT = {
     hero: {
       status: "Amiens, France · ouvert aux collaborations",
       name: "Pierre Moreau",
-      role: "Docteur en Machine Learning, je conçois des produits IA pour la santé & les entreprises.",
+      role: "Docteur en informatique spécialisé en machine learning, je conçois des produits IA pour la santé & les entreprises.",
       tagline:
         "Chercheur en IA spécialisé santé — apprentissage multimodal, risque clinique, IA générative. Je développe aussi des produits IA concrets pour les hôpitaux et les TPE.",
       ctaContact: "Me contacter",
@@ -306,7 +306,7 @@ const CONTENT = {
         { label: "GitHub", value: "pierre-moreau-phd", href: "https://github.com/pierre-moreau-phd" },
       ],
     },
-    footer: { note: "Docteur ML · Ingénieur IA Santé · conçu à Amiens" },
+    footer: { note: "Docteur en informatique · ML & IA Santé · conçu à Amiens" },
   },
 };
 
