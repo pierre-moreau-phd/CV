@@ -51,6 +51,12 @@ a:hover { color: #c9d3ff; }
   0%, 100% { transform: translate(0, 0) scale(1); }
   50% { transform: translate(-4%, 3%) scale(1.1); }
 }
+@keyframes hero-sweep {
+  0%   { transform: translateX(-130%) skewX(-14deg); opacity: 0; }
+  12%  { opacity: 1; }
+  88%  { opacity: 1; }
+  100% { transform: translateX(320%) skewX(-14deg); opacity: 0; }
+}
 
 /* --- shared helpers --- */
 .dot-sep { width: 4px; height: 4px; border-radius: 50%; background: var(--tx-mute); }
@@ -151,6 +157,17 @@ a:hover { color: #c9d3ff; }
    Hero
    ============================================================ */
 .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; bottom: 0; left: 0;
+  width: 42%;
+  z-index: 1;
+  background: linear-gradient(90deg, transparent, rgba(91, 124, 255, .09) 45%, rgba(157, 176, 255, .07) 55%, transparent);
+  transform: translateX(-130%) skewX(-14deg);
+  animation: hero-sweep 8.5s ease-in-out infinite;
+  pointer-events: none;
+}
 .hero-glow {
   position: absolute;
   top: -22%; right: -8%;
@@ -176,6 +193,7 @@ a:hover { color: #c9d3ff; }
 }
 .hero-inner {
   position: relative;
+  z-index: 2;
   max-width: var(--maxw);
   margin-inline: auto;
   padding: clamp(64px, 12vh, 140px) clamp(18px, 4vw, 40px) clamp(58px, 10vh, 108px);
@@ -625,6 +643,7 @@ a:hover { color: #c9d3ff; }
   html { scroll-behavior: auto; }
   [data-reveal] { opacity: 1; transform: none; transition: none; }
   .hero-glow { animation: none; }
+  .hero::before { animation: none; opacity: 0; }
 }
 
 @media print {
