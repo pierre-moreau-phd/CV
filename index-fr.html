@@ -1,650 +1,444 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pierre Moreau — Docteur en ML / Ingénieur IA Santé</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pierre Moreau — Docteur en ML / Ingénieur IA Santé</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Docteur en Machine Learning (2023), chercheur IA spécialisé en santé. Post-doc à l'UPJV (projet RAUC) : IA générative, imagerie médicale, systèmes LLM/RAG pour la santé.">
-    <meta name="author" content="Pierre Moreau">
-    <meta name="keywords" content="Pierre Moreau, machine learning, ingénieur IA, IA santé, LLM, RAG, vision par ordinateur, imagerie médicale, Amiens">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://pierremoreau.myddns.me/index-fr.html">
+  <!-- SEO -->
+  <meta name="description" content="Docteur en Machine Learning (2023), chercheur IA spécialisé en santé. Post-doc à l&#39;UPJV (projet RAUC) : IA générative, imagerie médicale, systèmes LLM/RAG pour la santé.">
+  <meta name="author" content="Pierre Moreau">
+  <meta name="keywords" content="Pierre Moreau, machine learning, ingénieur IA, IA santé, LLM, RAG, vision par ordinateur, imagerie médicale, Amiens">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pierremoreau.myddns.me/index-fr.html">
 
-    <!-- i18n alternates -->
-    <link rel="alternate" hreflang="en" href="https://pierremoreau.myddns.me/index.html">
-    <link rel="alternate" hreflang="fr" href="https://pierremoreau.myddns.me/index-fr.html">
-    <link rel="alternate" hreflang="x-default" href="https://pierremoreau.myddns.me/">
+  <!-- i18n alternates -->
+  <link rel="alternate" hreflang="en" href="https://pierremoreau.myddns.me/index.html">
+  <link rel="alternate" hreflang="fr" href="https://pierremoreau.myddns.me/index-fr.html">
+  <link rel="alternate" hreflang="x-default" href="https://pierremoreau.myddns.me/">
 
-    <!-- Schema.org Person (rich result for Google) -->
-    <script type="application/ld+json">
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Pierre Moreau",
+  "givenName": "Pierre",
+  "familyName": "Moreau",
+  "jobTitle": "Docteur en Machine Learning, Ingénieur IA Santé",
+  "description": "Chercheur IA, docteur en machine learning, spécialisé en santé. Post-doctorant à l'UPJV (projet RAUC).",
+  "url": "https://pierremoreau.myddns.me/",
+  "email": "mailto:moreau.p.02@gmail.com",
+  "telephone": "+33611805832",
+  "image": "https://pierremoreau.myddns.me/og-image.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Amiens",
+    "addressCountry": "FR"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Université de Picardie Jules Verne",
+    "url": "https://www.u-picardie.fr/"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Université de Picardie Jules Verne"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/pierre-moreau-phd/",
+    "https://github.com/pierre-moreau-phd"
+  ],
+  "knowsAbout": [
+    "Machine Learning",
+    "Deep Learning",
+    "IA générative",
+    "Large Language Models",
+    "Retrieval-Augmented Generation",
+    "IA santé",
+    "Imagerie médicale",
+    "Vision par ordinateur",
+    "Whisper Speech-to-Text",
+    "IA explicable"
+  ],
+  "knowsLanguage": [
     {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Pierre Moreau",
-        "givenName": "Pierre",
-        "familyName": "Moreau",
-        "jobTitle": "Docteur en Machine Learning, Ingénieur IA Santé",
-        "description": "Chercheur IA, docteur en machine learning, spécialisé en santé. Post-doctorant à l'UPJV (projet RAUC).",
-        "url": "https://pierremoreau.myddns.me/",
-        "email": "mailto:moreau.p.02@gmail.com",
-        "telephone": "+33611805832",
-        "image": "https://pierremoreau.myddns.me/og-image.png",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Amiens",
-            "addressCountry": "FR"
-        },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "Université de Picardie Jules Verne",
-            "url": "https://www.u-picardie.fr/"
-        },
-        "worksFor": {
-            "@type": "Organization",
-            "name": "Université de Picardie Jules Verne"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/pierre-moreau-phd/",
-            "https://github.com/pierre-moreau-phd"
-        ],
-        "knowsAbout": [
-            "Machine Learning",
-            "Deep Learning",
-            "IA générative",
-            "Large Language Models",
-            "Retrieval-Augmented Generation",
-            "IA santé",
-            "Imagerie médicale",
-            "Vision par ordinateur",
-            "Whisper Speech-to-Text",
-            "IA explicable"
-        ],
-        "knowsLanguage": [
-            { "@type": "Language", "name": "Français", "alternateName": "fr" },
-            { "@type": "Language", "name": "Anglais", "alternateName": "en" }
-        ]
+      "@type": "Language",
+      "name": "Français",
+      "alternateName": "fr"
+    },
+    {
+      "@type": "Language",
+      "name": "Anglais",
+      "alternateName": "en"
     }
-    </script>
+  ]
+}
+  </script>
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://pierremoreau.myddns.me/index-fr.html">
-    <meta property="og:title" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
-    <meta property="og:description" content="Chercheur IA spécialisé en santé — apprentissage multimodal, IA générative et imagerie médicale.">
-    <meta property="og:image" content="https://pierremoreau.myddns.me/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:locale:alternate" content="en_US">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pierremoreau.myddns.me/index-fr.html">
+  <meta property="og:title" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
+  <meta property="og:description" content="Chercheur IA spécialisé en santé — apprentissage multimodal, IA générative et imagerie médicale.">
+  <meta property="og:image" content="https://pierremoreau.myddns.me/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
-    <meta name="twitter:description" content="Chercheur IA spécialisé en santé — IA générative et imagerie médicale.">
-    <meta name="twitter:image" content="https://pierremoreau.myddns.me/og-image.png">
-    <meta name="twitter:image:alt" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
+  <meta name="twitter:description" content="Chercheur IA spécialisé en santé — IA générative et imagerie médicale.">
+  <meta name="twitter:image" content="https://pierremoreau.myddns.me/og-image.png">
+  <meta name="twitter:image:alt" content="Pierre Moreau — Docteur en ML / Ingénieur IA Santé">
 
-    <!-- Theme color (mobile) -->
-    <meta name="theme-color" content="#3b82f6">
+  <!-- Theme color -->
+  <meta name="theme-color" content="#0a0c10">
 
-    <!-- Favicon (SVG primary, ICO fallback) -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="favicon.svg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.svg">
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles & script -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <noscript><style>[data-reveal]{opacity:1;transform:none}</style></noscript>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" data-aos="fade-down">
-        <div class="container">
-            <div class="nav-brand">Pierre Moreau</div>
-                        <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Accueil</a></li>
-                <li><a href="#about" class="nav-link">À propos</a></li>
-                <li><a href="#experience" class="nav-link">Expérience</a></li>
-                <li><a href="#projects" class="nav-link">Projets</a></li>
-                <li><a href="#publications" class="nav-link">Publications</a></li>
-                <li><a href="#skills" class="nav-link">Compétences</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li class="language-switcher">
-                    <a href="index.html" class="nav-link lang-switch" title="Switch to English">
-                        <span class="flag-icon flag-gb"></span>
-                        <span>EN</span>
-                    </a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+<header class="site-header" id="top">
+  <nav class="nav">
+    <a href="#top" class="nav-brand"><span class="nav-dot" aria-hidden="true"></span>Pierre Moreau</a>
+    <div class="nav-right">
+      <div class="nav-links"><a href="#about" class="nav-link" data-nav="about">À propos</a><a href="#work" class="nav-link" data-nav="work">Réalisations</a><a href="#experience" class="nav-link" data-nav="experience">Expérience</a><a href="#research" class="nav-link" data-nav="research">Recherche</a><a href="#skills" class="nav-link" data-nav="skills">Compétences</a><a href="#contact" class="nav-link" data-nav="contact">Contact</a></div>
+      <div class="nav-tools">
+        <div class="lang-pill" role="group" aria-label="Language">
+          <a class="lang-btn" href="index.html" hreflang="en">EN</a>
+          <a class="lang-btn is-active" href="index-fr.html" hreflang="fr">FR</a>
         </div>
-    </nav>
+        <a class="cv-btn" href="Pierre_Moreau_CV_FR.pdf" download>CV <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <canvas class="hero-canvas" aria-hidden="true"></canvas>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">Pierre Moreau</h1>
-                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="400" data-typewriter>Docteur en Machine Learning · Ingénieur IA Santé</h2>
-                <p class="hero-description" data-aos="fade-up" data-aos-delay="600">Chercheur en IA spécialisé dans les applications de santé &mdash; apprentissage multimodal, évaluation des risques cliniques, IA générative. Je conçois aussi des produits IA concrets pour la santé et les TPE.</p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
-                    <a href="#contact" class="btn btn-primary">Me contacter</a>
-                    <a href="#projects" class="btn btn-secondary">Voir mes projets</a>
-                    <a href="Pierre_Moreau_CV_FR.pdf" download class="btn btn-ghost" aria-label="Télécharger le CV au format PDF">
-                        <i class="fas fa-arrow-down"></i> CV (PDF)
-                    </a>
-                </div>
-            </div>
+<section id="home" class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-status" data-reveal data-reveal-delay="0"><span class="status-dot" aria-hidden="true"></span>Amiens, France · ouvert aux collaborations</div>
+      <h1 class="hero-name" data-reveal data-reveal-delay="70">Pierre Moreau</h1>
+      <p class="hero-role" data-reveal data-reveal-delay="140">Docteur en Machine Learning, je conçois des produits IA pour la santé &amp; les entreprises.</p>
+      <p class="hero-tagline" data-reveal data-reveal-delay="210">Chercheur en IA spécialisé santé — apprentissage multimodal, risque clinique, IA générative. Je développe aussi des produits IA concrets pour les hôpitaux et les TPE.</p>
+      <div class="hero-actions" data-reveal data-reveal-delay="280">
+        <a href="#contact" class="btn-primary">Me contacter →</a>
+        <a href="#work" class="btn-ghost">Voir les réalisations</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div class="metrics-inner">
+    <div class="metric" data-reveal>
+      <div class="metric-value" data-count="5">5</div>
+      <div class="metric-label">publications scientifiques</div>
+    </div><div class="metric" data-reveal>
+      <div class="metric-value" data-count="9">9+</div>
+      <div class="metric-label">ans de dev logiciel</div>
+    </div><div class="metric" data-reveal>
+      <div class="metric-value" data-count="2023">2023</div>
+      <div class="metric-label">thèse soutenue · informatique</div>
+    </div><div class="metric" data-reveal>
+      <div class="metric-value" data-count="3">3</div>
+      <div class="metric-label">produits IA en cours</div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-head" data-reveal>
+    <span class="section-num">01</span>
+    <h2 class="section-title">À propos</h2>
+    <span class="section-rule" aria-hidden="true"></span>
+  </div>
+  <div class="about-cols">
+    <div class="about-main">
+      <div class="about-lead" data-reveal>
+        <p>Je suis ingénieur en IA &amp; Machine Learning, docteur en informatique (nov. 2023), spécialisé en santé. Ma thèse, menée avec le CHU d&#39;Amiens, portait sur l&#39;analyse du mouvement par IA — appliquée notamment à la maladie de Parkinson.</p><p>Je suis actuellement post-doctorant à l&#39;Université de Picardie Jules Verne sur le projet RAUC : un parcours de soins optimisé pour les urgences chirurgicales digestives, avec de l&#39;IA pour prédire les complications post-opératoires. Auparavant, j&#39;ai dirigé le pôle IA &amp; Data Science Santé chez Capgemini Engineering sur un assistant médical par IA générative, en coordonnant une équipe de 15 à 20 personnes.</p><p>En parallèle, je conçois des produits IA concrets pour la santé et les TPE, avec une expertise solide en systèmes LLM, RAG multimodal, vision par ordinateur (imagerie médicale), IA explicable et ML en production.</p>
+      </div>
+      <div class="about-facts" data-reveal>
+        <div class="fact"><div class="fact-k">Localisation</div><div class="fact-v">Amiens, France</div></div><div class="fact"><div class="fact-k">Email</div><div class="fact-v">moreau.p.02@gmail.com</div></div><div class="fact"><div class="fact-k">LinkedIn</div><div class="fact-v">pierre-moreau-phd</div></div><div class="fact"><div class="fact-k">GitHub</div><div class="fact-v">pierre-moreau-phd</div></div><div class="fact"><div class="fact-k">Langues</div><div class="fact-v">Français (natif) · Anglais (B2)</div></div>
+      </div>
+    </div>
+    <div class="about-side" data-reveal>
+      <div class="now-card">
+        <div class="now-head">
+          <span class="now-head-title">En ce moment</span>
+          <span class="now-updated">maj mai 2026</span>
         </div>
-    </section>
-
-    <!-- Metrics Band -->
-    <section class="metrics" aria-label="Chiffres clés">
-        <div class="container">
-            <div class="metrics-grid">
-                <div class="metric-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="metric-value" data-target="5">0</div>
-                    <div class="metric-label">publications scientifiques</div>
-                </div>
-                <div class="metric-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="metric-value">
-                        <span data-target="9">0</span>
-                    </div>
-                    <div class="metric-label">ans de développement logiciel</div>
-                </div>
-                <div class="metric-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="metric-value" data-target="2023">0</div>
-                    <div class="metric-label">thèse soutenue (informatique)</div>
-                </div>
-            </div>
+        <div class="now-item">
+          <span class="now-tag">recherche</span>
+          <div class="now-item-title">Post-doc RAUC · UPJV</div>
+          <div class="now-desc">Prédiction des complications post-opératoires pour les urgences chirurgicales digestives, avec le CHU d&#39;Amiens.</div>
+        </div><div class="now-item">
+          <span class="now-tag">produit</span>
+          <div class="now-item-title">Solis — ERP IA pour TPE</div>
+          <div class="now-desc">Un ERP IA pour artisans &amp; TPE : devis, factures, facturation électronique, dictée vocale (Whisper), OCR.</div>
+        </div><div class="now-item">
+          <span class="now-tag">produit</span>
+          <div class="now-item-title">MVP Boussole — T4 2026</div>
+          <div class="now-desc">Assistant IA pour les aides françaises (60+ via OpenFisca) et les recours juridiques. MVP livré en novembre.</div>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">À propos de moi</h2>
-            <div class="about-content">
-                <div class="profile" data-aos="fade-right" data-aos-delay="100" aria-hidden="true">
-                    <svg class="profile-network" viewBox="0 0 360 360" aria-hidden="true">
-                        <defs>
-                            <linearGradient id="netGrad" x1="0" y1="0" x2="360" y2="360" gradientUnits="userSpaceOnUse">
-                                <stop offset="0" stop-color="#22d3ee" stop-opacity="0.6"/>
-                                <stop offset="1" stop-color="#10b981" stop-opacity="0.6"/>
-                            </linearGradient>
-                        </defs>
-                        <g stroke="url(#netGrad)" stroke-width="1.4" stroke-dasharray="3 5" stroke-linecap="round">
-                            <line x1="180" y1="180" x2="50" y2="50"/>
-                            <line x1="180" y1="180" x2="310" y2="50"/>
-                            <line x1="180" y1="180" x2="50" y2="310"/>
-                            <line x1="180" y1="180" x2="310" y2="310"/>
-                        </g>
-                        <g class="neural-nodes">
-                            <circle class="neural-node" cx="50" cy="50" r="6" fill="#22d3ee"/>
-                            <circle class="neural-node" cx="310" cy="50" r="6" fill="#22d3ee"/>
-                            <circle class="neural-node" cx="50" cy="310" r="6" fill="#10b981"/>
-                            <circle class="neural-node" cx="310" cy="310" r="6" fill="#10b981"/>
-                        </g>
-                    </svg>
-                    <div class="profile-frame">
-                        <img src="pierre-moreau.jpg" alt="Pierre Moreau, Docteur en ML / Ingénieur IA Santé" class="profile-img" width="280" height="280" loading="lazy">
-                    </div>
-                </div>
-                <div class="about-text" data-aos="fade-up" data-aos-delay="200">
-                    <p>Je suis chercheur en IA et Machine Learning, <strong>docteur en informatique (nov. 2023)</strong>, spécialisé en santé. Ma thèse, menée en partenariat avec le CHU d&rsquo;Amiens, portait sur l&rsquo;analyse du mouvement par intelligence artificielle &mdash; appliquée notamment à la maladie de Parkinson.</p>
-                    <p>Je suis actuellement <strong>post-doctorant à l&rsquo;Université de Picardie Jules Verne</strong>, sur le <strong>projet RAUC</strong> : un parcours de soins optimisé pour les urgences chirurgicales digestives, intégrant l&rsquo;IA pour prédire les complications post-opératoires. Auparavant, j&rsquo;ai dirigé le pôle IA &amp; Data Science Santé chez <strong>Capgemini Engineering</strong> sur un démonstrateur d&rsquo;assistant médical par IA générative, en coordonnant une équipe de 15 à 20 personnes.</p>
-                    <p>En parallèle, je conçois des <strong>produits IA concrets</strong> pour la santé et les TPE. J&rsquo;apporte une expertise solide en <strong>systèmes LLM, RAG multimodal, vision par ordinateur (imagerie médicale), IA explicable</strong> et déploiement de pipelines ML en production.</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <a href="https://www.google.com/maps/place/Amiens,+France" target="_blank" rel="noopener">Amiens, France</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:moreau.p.02@gmail.com">moreau.p.02@gmail.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+33611805832">+33 6 11 80 58 32</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/pierre-moreau-phd/" target="_blank" rel="noopener">Profil LinkedIn</a>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/pierre-moreau-phd" target="_blank" rel="noopener">Profil GitHub</a>
-                        </div>
-                    </div>
-                </div>
+<div class="band">
+  <section id="work" class="section">
+    <div class="section-head tight" data-reveal>
+    <span class="section-num">02</span>
+    <h2 class="section-title">Réalisations</h2>
+    <span class="section-rule" aria-hidden="true"></span>
+  </div>
+    <p class="section-sub" data-reveal>Produits &amp; applications — en production ou en développement actif.</p>
+    <div class="work-list">
+      <article class="work-card" data-reveal>
+        <div class="work-card-row">
+          <div class="work-card-main">
+            <div class="work-meta">
+              <span class="work-kind">Produit · en dev</span>
+              <span class="dot-sep" aria-hidden="true"></span>
+              <span class="work-year">2024 →</span>
             </div>
+            <h3 class="work-name">Solis — ERP propulsé par l&#39;IA</h3>
+            <p class="work-desc">ERP full-stack pour artisans &amp; TPE français, en développement avancé : devis, factures, avoirs, acomptes, facturation électronique (Factur-X), abonnements Stripe, OCR, dictée vocale (Whisper) et assistant IA conversationnel. Audit RGPD, design system « Atelier » maison.</p>
+            <div class="tags"><span class="tag">Django</span><span class="tag">Next.js 15</span><span class="tag">Claude API</span><span class="tag">Whisper</span><span class="tag">Stripe</span><span class="tag">Factur-X</span></div>
+          </div>
+          <div class="work-card-side">
+            <span class="work-no" aria-hidden="true">01</span>
+            <a class="link-pill" href="https://noovate.ddns.net/" target="_blank" rel="noopener">Démo live ↗</a>
+          </div>
         </div>
-    </section>
-
-    <!-- Currently / Now -->
-    <section id="now" class="now">
-        <div class="container">
-            <div class="now-header">
-                <h2 class="section-title" data-aos="fade-up">En ce moment</h2>
-                <p class="now-updated" data-aos="fade-up" data-aos-delay="100">mise à jour &middot; mai 2026</p>
+      </article><article class="work-card" data-reveal>
+        <div class="work-card-row">
+          <div class="work-card-main">
+            <div class="work-meta">
+              <span class="work-kind">Produit · déployé</span>
+              <span class="dot-sep" aria-hidden="true"></span>
+              <span class="work-year">2024</span>
             </div>
-            <div class="now-grid">
-                <article class="now-item" data-aos="fade-up" data-aos-delay="200">
-                    <span class="now-tag">recherche</span>
-                    <h3>Post-doc RAUC à l&rsquo;UPJV</h3>
-                    <p>Prédiction des complications post-opératoires pour les urgences chirurgicales digestives, en partenariat avec le CHU d&rsquo;Amiens.</p>
-                </article>
-                <article class="now-item" data-aos="fade-up" data-aos-delay="300">
-                    <span class="now-tag">produit</span>
-                    <h3>Solis — ERP IA pour TPE</h3>
-                    <p>Développement d&rsquo;un ERP IA pour artisans et TPE : devis, factures, facturation électronique, dictée vocale (Whisper), OCR.</p>
-                </article>
-                <article class="now-item" data-aos="fade-up" data-aos-delay="400">
-                    <span class="now-tag">produit</span>
-                    <h3>MVP Boussole — T4 2026</h3>
-                    <p>Assistant IA pour les aides françaises (60+ via OpenFisca) et les recours juridiques. Architecture 3 piliers, MVP livré en novembre.</p>
-                </article>
-            </div>
+            <h3 class="work-name">Vesta — planning radiologie</h3>
+            <p class="work-desc">Application web qui génère le planning mensuel du Service de Radiologie du CHU d&#39;Amiens — 5 spécialités, rotation sur 6 semaines, verrous manuels avec régénération automatique. 100 % côté client (React + Vite), persisté en localStorage.</p>
+            <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">TypeScript</span><span class="tag">Déployé au CHU</span></div>
+          </div>
+          <div class="work-card-side">
+            <span class="work-no" aria-hidden="true">02</span>
+            
+          </div>
         </div>
-    </section>
+      </article>
+    </div>
+  </section>
+</div>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Expérience Professionnelle</h2>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">09/2025 — en cours</div>
-                    <div class="timeline-content">
-                        <h3>Post-Doctorat en IA</h3>
-                        <h4>Université de Picardie Jules Verne — Amiens, France</h4>
-                        <ul>
-                            <li><strong>Projet RAUC</strong> : conception d&rsquo;un parcours de soins optimisé pour les urgences chirurgicales digestives, intégrant IA et e-santé</li>
-                            <li>Prédiction des complications post-opératoires à partir de données cliniques</li>
-                            <li>Partenariat avec le CHU d&rsquo;Amiens</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">03/2024 — 05/2025</div>
-                    <div class="timeline-content">
-                        <h3>Ingénieur Data &amp; IA &mdash; Responsable IA &amp; Data Science Santé</h3>
-                        <h4>Capgemini Engineering &mdash; Paris, France</h4>
-                        <ul>
-                            <li>Direction de la conception et du développement d&rsquo;un démonstrateur d&rsquo;assistant médical par IA générative, avec workflows multimodaux</li>
-                            <li>Conception de pipelines NLP : OCR pour analyses sanguines, transcription vocale Whisper, extraction automatique de mots-clés</li>
-                            <li>Fine-tuning de LLM (OpenAI, Mistral) avec PEFT / LoRA pour résumés cliniques et transcription audio</li>
-                            <li>Pipeline RAG multimodal avec LangChain pour extraire et synthétiser des données médicales structurées et non structurées</li>
-                            <li>Recherche appliquée sur la segmentation du placenta avec architectures Transformer (UNetR, SwinUNet)</li>
-                            <li>Coordination chercheurs IA, data scientists et cliniciens (équipe de 15&ndash;20 personnes)</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-date">2022 &mdash; 2023</div>
-                    <div class="timeline-content">
-                        <h3>ATER &mdash; Attaché Temporaire d&rsquo;Enseignement et de Recherche</h3>
-                        <h4>Université de Picardie Jules Verne &mdash; Amiens, France</h4>
-                        <ul>
-                            <li>TD et TP pour étudiants de 1ère, 2ème et 3ème année de licence (PHP, Bash, C, programmation avancée)</li>
-                            <li>Conception de cours sur les fondamentaux du machine learning</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">2019 &mdash; 2023</div>
-                    <div class="timeline-content">
-                        <h3>Thèse &mdash; Modélisation et Analyse du Mouvement Humain</h3>
-                        <h4>Université de Picardie Jules Verne &amp; CHU d&rsquo;Amiens</h4>
-                        <ul>
-                            <li>Création d&rsquo;une base de données complète de mouvements humains pour l&rsquo;analyse quantitative et l&rsquo;entraînement de modèles</li>
-                            <li>Analyse approfondie : ACP, Dynamic Time Warping (DTW), corrélation</li>
-                            <li>Algorithmes génétiques pour le réglage de paramètres et la sélection de features</li>
-                            <li>Modèles de deep learning (RNN, LSTM, CNN, réseaux résiduels) et SVM pour la classification</li>
-                            <li>Représentations biomécaniques interprétables via modèles dynamiques matriciels</li>
-                            <li>Thèse soutenue en novembre 2023</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-date">2017 — 2019</div>
-                    <div class="timeline-content">
-                        <h3>Développeur (alternance puis CDD)</h3>
-                        <h4>LV Informatique — Amiens, France</h4>
-                        <ul>
-                            <li>Développement et maintenance de l&rsquo;ERP <em>Lyn&eacute;ade</em> / <em>Lyn&eacute;a2</em> (WinDev) : comptabilité, achats, ventes, inventaire, SAV</li>
-                            <li>Administration base SQL et optimisation de performance</li>
-                            <li>Développement piloté client — fondement direct de mon projet ERP actuel (Solis)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="experience" class="section">
+  <div class="section-head" data-reveal>
+    <span class="section-num">03</span>
+    <h2 class="section-title">Expérience</h2>
+    <span class="section-rule" aria-hidden="true"></span>
+  </div>
+  <div class="exp-row" data-reveal>
+    <div class="exp-date">09/2025 — en cours</div>
+    <div>
+      <h3 class="exp-role">Post-Doctorant en IA</h3>
+      <div class="exp-org">Université de Picardie Jules Verne — Amiens</div>
+      <ul class="exp-bullets"><li>Projet RAUC : parcours de soins optimisé pour les urgences chirurgicales digestives, intégrant IA et e-santé</li><li>Prédiction des complications post-opératoires à partir de données cliniques</li><li>Partenariat avec le CHU d&#39;Amiens</li></ul>
+    </div>
+  </div><div class="exp-row" data-reveal>
+    <div class="exp-date">03/2024 — 05/2025</div>
+    <div>
+      <h3 class="exp-role">Ingénieur Data &amp; IA — Responsable IA &amp; Data Science Santé</h3>
+      <div class="exp-org">Capgemini Engineering — Paris</div>
+      <ul class="exp-bullets"><li>Direction de la conception et du développement d&#39;un démonstrateur d&#39;assistant médical par IA générative, workflows multimodaux</li><li>Pipelines NLP : OCR pour analyses sanguines, transcription Whisper, extraction de mots-clés</li><li>Fine-tuning de LLM (OpenAI, Mistral) avec PEFT / LoRA pour résumés cliniques et transcription</li><li>Pipeline RAG multimodal avec LangChain sur données médicales structurées et non structurées</li><li>Recherche appliquée sur la segmentation du placenta (UNetR, SwinUNet)</li><li>Coordination chercheurs, data scientists et cliniciens (équipe de 15–20)</li></ul>
+    </div>
+  </div><div class="exp-row" data-reveal>
+    <div class="exp-date">2022 — 2023</div>
+    <div>
+      <h3 class="exp-role">ATER — Attaché Temporaire d&#39;Enseignement et de Recherche</h3>
+      <div class="exp-org">Université de Picardie Jules Verne — Amiens</div>
+      <ul class="exp-bullets"><li>TD et TP pour étudiants de licence (PHP, Bash, C, programmation avancée)</li><li>Conception de cours sur les fondamentaux du machine learning</li></ul>
+    </div>
+  </div><div class="exp-row" data-reveal>
+    <div class="exp-date">2019 — 2023</div>
+    <div>
+      <h3 class="exp-role">Thèse — Modélisation et Analyse du Mouvement Humain</h3>
+      <div class="exp-org">UPJV &amp; CHU d&#39;Amiens</div>
+      <ul class="exp-bullets"><li>Création d&#39;une base de données de mouvements humains pour l&#39;analyse quantitative et l&#39;entraînement de modèles</li><li>Analyse : ACP, Dynamic Time Warping (DTW), corrélation</li><li>Algorithmes génétiques pour le réglage de paramètres et la sélection de features</li><li>Modèles de deep learning (RNN, LSTM, CNN, réseaux résiduels) et SVM</li><li>Représentations biomécaniques interprétables via modèles dynamiques matriciels</li><li>Thèse soutenue en novembre 2023</li></ul>
+    </div>
+  </div><div class="exp-row" data-reveal>
+    <div class="exp-date">2017 — 2019</div>
+    <div>
+      <h3 class="exp-role">Développeur (alternance → CDD)</h3>
+      <div class="exp-org">LV Informatique — Amiens</div>
+      <ul class="exp-bullets"><li>Développement et maintenance de l&#39;ERP Lynéade / Lynéa2 (WinDev) : compta, achats, ventes, inventaire, SAV</li><li>Administration base SQL et optimisation des performances</li><li>Développement piloté client — fondement direct de mon ERP actuel (Solis)</li></ul>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Projets Principaux</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Un mélange entre <strong>produits &amp; applications</strong> (en production / en développement) et <strong>projets recherche &amp; pro</strong>.</p>
+<div class="band">
+  <section id="research" class="section">
+    <div class="section-head" data-reveal>
+    <span class="section-num">04</span>
+    <h2 class="section-title">Recherche &amp; publications</h2>
+    <span class="section-rule" aria-hidden="true"></span>
+  </div>
+    <div class="subhead" data-reveal>Projets recherche &amp; pro</div>
+    <div class="proj-grid">
+      <article class="proj-card" data-reveal>
+        <h3 class="proj-name">Assistant Médical IA (Capgemini)</h3>
+        <p class="proj-desc">Démonstrateur d&#39;assistant médical par IA générative, traitement multimodal : OCR analyses sanguines, Whisper STT, fine-tuning LLM pour résumés cliniques, RAG multimodal.</p>
+        <div class="tags"><span class="tag sm">Python</span><span class="tag sm">LangChain</span><span class="tag sm">PEFT / LoRA</span><span class="tag sm">RAG</span></div>
+      </article><article class="proj-card" data-reveal>
+        <h3 class="proj-name">Segmentation du placenta (Doppler 3D)</h3>
+        <p class="proj-desc">Segmentation par Transformers (UNetR, SwinUNet) pour la détection précoce de la prééclampsie sur images Doppler 3D. Soumis à CMIG 2025 (co-auteur).</p>
+        <div class="tags"><span class="tag sm">PyTorch</span><span class="tag sm">UNetR</span><span class="tag sm">SwinUNet</span><span class="tag sm">Imagerie médicale</span></div>
+      </article><article class="proj-card" data-reveal>
+        <h3 class="proj-name">Analyse du mouvement humain (thèse)</h3>
+        <p class="proj-desc">Modélisation du mouvement appliquée à Parkinson et à la reconnaissance d&#39;activité. Deep learning (RNN, LSTM, CNN), algorithmes génétiques, représentations matricielles interprétables. 3 publications.</p>
+        <div class="tags"><span class="tag sm">RNN / LSTM</span><span class="tag sm">PCA / DTW</span><span class="tag sm">Algos génétiques</span><span class="tag sm">SVM</span></div>
+      </article>
+    </div>
+    <div class="subhead pubs" data-reveal>Publications sélectionnées</div>
+    <article class="pub-row" data-reveal>
+      <div class="pub-meta">
+        <span class="pub-year">2026</span>
+        <span class="pub-status">Accepté</span>
+      </div>
+      <div>
+        <h3 class="pub-title">A Genetic Algorithm-Optimized PID Controller for Robust Tumor Treatment via Combined Immuno-Chemotherapy</h3>
+        <div class="pub-venue">Int. Conf. on Control, Decision and Information Technologies (CoDIT)</div>
+        <div class="pub-authors">Jérôme Bosche, Consibelle Djiffouo Dzoyim, Pierre Moreau</div>
+      </div>
+    </article><article class="pub-row" data-reveal>
+      <div class="pub-meta">
+        <span class="pub-year">2025</span>
+        <span class="pub-status">Soumis</span>
+      </div>
+      <div>
+        <h3 class="pub-title">Towards Better Placenta Segmentation for Earlier Preeclampsia Detection on 3D Doppler Images</h3>
+        <div class="pub-venue">Computerized Medical Imaging and Graphics (CMIG)</div>
+        <div class="pub-authors">C. Alliod, E. Micard, Pierre Moreau, L. Challier, G. Martensen, H. Kadi, S. Le Bars, O. Morel, M. Blanchon, M. Beaumont</div>
+      </div>
+    </article><article class="pub-row" data-reveal>
+      <div class="pub-meta">
+        <span class="pub-year">2023</span>
+        <span class="pub-status">Publié</span>
+      </div>
+      <div>
+        <h3 class="pub-title">Two-branch neural network using two data types for human activity recognition</h3>
+        <div class="pub-venue">IEEE Sensors Journal</div>
+        <div class="pub-authors">Pierre Moreau, David Durand, Jérôme Bosche, Michel Lefranc</div>
+      </div>
+    </article><article class="pub-row" data-reveal>
+      <div class="pub-meta">
+        <span class="pub-year">2021</span>
+        <span class="pub-status">Publié</span>
+      </div>
+      <div>
+        <h3 class="pub-title">A motion recognition technique based on linear matrix representation to improve Parkinson&#39;s disease treatments</h3>
+        <div class="pub-venue">9th Int. Conf. on Systems and Control (ICSC)</div>
+        <div class="pub-authors">Pierre Moreau, David Durand, Jérôme Bosche, Michel Lefranc</div>
+      </div>
+    </article><article class="pub-row" data-reveal>
+      <div class="pub-meta">
+        <span class="pub-year">2020</span>
+        <span class="pub-status">Publié</span>
+      </div>
+      <div>
+        <h3 class="pub-title">A motion recognition algorithm using polytopic modeling</h3>
+        <div class="pub-venue">7th Int. Conf. on Control, Decision and Information Technologies (CoDIT)</div>
+        <div class="pub-authors">Pierre Moreau, David Durand, Jérôme Bosche, Michel Lefranc</div>
+      </div>
+    </article>
+  </section>
+</div>
 
-            <h3 class="projects-group-title" data-aos="fade-up">Produits &amp; applications</h3>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-header">
-                        <i class="fas fa-file-invoice project-icon"></i>
-                        <h3>Solis &mdash; ERP IA pour TPE</h3>
-                    </div>
-                    <p>ERP full-stack pour artisans et TPE français, en développement avancé : devis, factures, avoirs, acomptes, facturation électronique (Factur-X), abonnements Stripe, OCR, dictée vocale (Whisper), assistant IA conversationnel. Audit RGPD, design system &laquo; Atelier &raquo;.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Next.js 15</span>
-                        <span class="tech-tag">Claude API</span>
-                        <span class="tech-tag">Whisper</span>
-                        <span class="tech-tag">Stripe</span>
-                        <span class="tech-tag">Factur-X</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://noovate.ddns.net/" target="_blank" rel="noopener" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            Voir la Démo Live
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-header">
-                        <i class="fas fa-compass project-icon"></i>
-                        <h3>Boussole &mdash; Assistant IA aides &amp; recours</h3>
-                    </div>
-                    <p>Assistant IA qui regroupe toutes les aides françaises (60+ via OpenFisca, ~1500 aides locales) et recours juridiques au même endroit. Trois piliers : aides citoyennes, aides sectorielles (médecins, profs, fonctionnaires), recours/litiges (caution, etc.). MVP en cours.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Next.js 15</span>
-                        <span class="tech-tag">Supabase</span>
-                        <span class="tech-tag">Claude API</span>
-                        <span class="tech-tag">RAG</span>
-                        <span class="tech-tag">OpenFisca</span>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="project-header">
-                        <i class="fas fa-x-ray project-icon"></i>
-                        <h3>Vesta &mdash; Planning radiologie</h3>
-                    </div>
-                    <p>Application web qui génère le planning mensuel du Service de Radiologie du CHU d&rsquo;Amiens &mdash; 5 spécialités, rotation sur 6 semaines, verrous manuels avec régénération auto. 100% côté client (React + Vite), persisté en localStorage.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Vite</span>
-                        <span class="tech-tag">TypeScript</span>
-                        <span class="tech-tag">Déployé au CHU</span>
-                    </div>
-                </div>
-            </div>
+<section id="skills" class="section">
+  <div class="section-head" data-reveal>
+    <span class="section-num">05</span>
+    <h2 class="section-title">Compétences</h2>
+    <span class="section-rule" aria-hidden="true"></span>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-group" data-reveal>
+      <h3 class="skill-label">ML &amp; Deep Learning</h3>
+      <div class="chips"><span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Keras</span><span class="chip">scikit-learn</span><span class="chip">XGBoost</span><span class="chip">Hugging Face</span><span class="chip">CNN / RNN / LSTM</span><span class="chip">Transformers</span><span class="chip">Reinforcement Learning</span><span class="chip">Algos génétiques</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">IA générative &amp; LLM</h3>
+      <div class="chips"><span class="chip">Claude API</span><span class="chip">OpenAI</span><span class="chip">LangChain</span><span class="chip">RAG multimodal</span><span class="chip">PEFT / LoRA</span><span class="chip">Fine-tuning</span><span class="chip">Prompt Engineering</span><span class="chip">Vector DB</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">Vision par ordinateur</h3>
+      <div class="chips"><span class="chip">UNetR</span><span class="chip">SwinUNet</span><span class="chip">OpenCV</span><span class="chip">PIL / Pillow</span><span class="chip">Imagerie médicale</span><span class="chip">Segmentation</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">NLP &amp; Parole</h3>
+      <div class="chips"><span class="chip">NLTK</span><span class="chip">Whisper (STT)</span><span class="chip">OCR</span><span class="chip">Tokenization</span><span class="chip">Embeddings</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">Data Science &amp; IA explicable</h3>
+      <div class="chips"><span class="chip">NumPy</span><span class="chip">Pandas</span><span class="chip">SciPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">PCA</span><span class="chip">DTW</span><span class="chip">SHAP</span><span class="chip">LIME</span><span class="chip">ANOVA</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">Backend &amp; MLOps</h3>
+      <div class="chips"><span class="chip">FastAPI</span><span class="chip">Django</span><span class="chip">Flask</span><span class="chip">Next.js 15</span><span class="chip">Supabase</span><span class="chip">PostgreSQL</span><span class="chip">Docker</span><span class="chip">Stripe</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">Langages &amp; Outils</h3>
+      <div class="chips"><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">JavaScript / TypeScript</span><span class="chip">Bash</span><span class="chip">HTML / CSS</span><span class="chip">Git</span><span class="chip">Claude Code / Cursor</span><span class="chip">Jupyter</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">Éthique IA &amp; Conformité</h3>
+      <div class="chips"><span class="chip">RGPD / GDPR</span><span class="chip">EU AI Act</span><span class="chip">Biais / Équité</span><span class="chip">IA explicable</span><span class="chip">Quantization / Pruning</span></div>
+    </div><div class="skill-group" data-reveal>
+      <h3 class="skill-label">Langues parlées</h3>
+      <div class="chips"><span class="chip">Français — Natif</span><span class="chip">Anglais — B2</span></div>
+    </div>
+  </div>
+</section>
 
-            <h3 class="projects-group-title" data-aos="fade-up">Projets recherche &amp; pro</h3>
-            <div class="projects-grid">
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="project-header">
-                        <i class="fas fa-heartbeat project-icon"></i>
-                        <h3>Assistant Médical IA (Capgemini)</h3>
-                    </div>
-                    <p>Démonstrateur d&rsquo;assistant médical par IA générative, traitement multimodal : OCR pour analyses sanguines, Whisper STT, fine-tuning LLM pour résumés cliniques, pipeline RAG multimodal.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">PEFT / LoRA</span>
-                        <span class="tech-tag">RAG</span>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="project-header">
-                        <i class="fas fa-brain project-icon"></i>
-                        <h3>Segmentation du placenta (Doppler 3D)</h3>
-                    </div>
-                    <p>Segmentation par Transformers (UNetR, SwinUNet) pour la détection précoce de la prééclampsie sur images Doppler 3D. Soumis à CMIG 2025 (co-auteur).</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">UNetR</span>
-                        <span class="tech-tag">SwinUNet</span>
-                        <span class="tech-tag">Imagerie médicale</span>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="project-header">
-                        <i class="fas fa-walking project-icon"></i>
-                        <h3>Analyse du mouvement humain (thèse)</h3>
-                    </div>
-                    <p>Modélisation complète du mouvement appliquée à Parkinson et à la reconnaissance d&rsquo;activité humaine. Architectures deep learning (RNN, LSTM, CNN), algorithmes génétiques, représentations matricielles interprétables. 3 publications.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">RNN / LSTM</span>
-                        <span class="tech-tag">PCA / DTW</span>
-                        <span class="tech-tag">Algos génétiques</span>
-                        <span class="tech-tag">SVM</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="contact" class="contact">
+  <div class="contact-glow" aria-hidden="true"></div>
+  <div class="contact-inner">
+    <div class="contact-eyebrow" data-reveal>06 · Contact</div>
+    <h2 class="contact-big" data-reveal>Construisons quelque chose d&#39;utile ensemble.</h2>
+    <p class="contact-lead" data-reveal>Toujours partant pour échanger sur l&#39;IA &amp; le ML — surtout en santé et sur des produits concrets. Écrivez-moi.</p>
+    <div class="contact-grid">
+      <a class="contact-card" data-reveal href="mailto:moreau.p.02@gmail.com">
+        <span class="contact-card-label">Email</span>
+        <span class="contact-card-value">moreau.p.02@gmail.com <span aria-hidden="true">↗</span></span>
+      </a><a class="contact-card" data-reveal href="https://www.linkedin.com/in/pierre-moreau-phd/" target="_blank" rel="noopener">
+        <span class="contact-card-label">LinkedIn</span>
+        <span class="contact-card-value">pierre-moreau-phd <span aria-hidden="true">↗</span></span>
+      </a><a class="contact-card" data-reveal href="https://github.com/pierre-moreau-phd" target="_blank" rel="noopener">
+        <span class="contact-card-label">GitHub</span>
+        <span class="contact-card-value">pierre-moreau-phd <span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <!-- Publications Section -->
-    <section id="publications" class="publications">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Publications</h2>
-            <div class="publications-list">
-                <article class="publication-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="publication-meta">
-                        <span class="publication-year">2026</span>
-                        <span class="publication-status">Accepté</span>
-                    </div>
-                    <h3>A Genetic Algorithm-Optimized PID Controller for Robust Tumor Treatment via Combined Immuno-Chemotherapy</h3>
-                    <p class="publication-venue">International Conference on Control, Decision and Information Technologies (CoDIT)</p>
-                    <p class="publication-authors">J&eacute;r&ocirc;me Bosche, Consibelle Djiffouo Dzoyim, <strong>Pierre Moreau</strong></p>
-                </article>
-                <article class="publication-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="publication-meta">
-                        <span class="publication-year">2025</span>
-                        <span class="publication-status status-submitted">Soumis</span>
-                    </div>
-                    <h3>Towards Better Placenta Segmentation for Earlier Preeclampsia Detection on 3D Doppler Images</h3>
-                    <p class="publication-venue">Computerized Medical Imaging and Graphics (CMIG)</p>
-                    <p class="publication-authors">Charlotte Alliod, Emilien Micard, <strong>Pierre Moreau</strong>, L&eacute;o Challier, Georgia Martensen, Hocine Kadi, Sol&egrave;ne Le Bars, Olivier Morel, Marc Blanchon, Marine Beaumont</p>
-                </article>
-                <article class="publication-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="publication-meta">
-                        <span class="publication-year">2023</span>
-                        <span class="publication-status">Publié</span>
-                    </div>
-                    <h3>Two-branch neural network using two data types for human activity recognition</h3>
-                    <p class="publication-venue">IEEE Sensors Journal</p>
-                    <p class="publication-authors"><strong>Pierre Moreau</strong>, David Durand, J&eacute;r&ocirc;me Bosche, Michel Lefranc</p>
-                </article>
-                <article class="publication-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="publication-meta">
-                        <span class="publication-year">2021</span>
-                        <span class="publication-status">Publié</span>
-                    </div>
-                    <h3>A motion recognition technique based on linear matrix representation to improve Parkinson&rsquo;s disease treatments</h3>
-                    <p class="publication-venue">9th International Conference on Systems and Control (ICSC)</p>
-                    <p class="publication-authors"><strong>Pierre Moreau</strong>, David Durand, J&eacute;r&ocirc;me Bosche, Michel Lefranc</p>
-                </article>
-                <article class="publication-item" data-aos="fade-up" data-aos-delay="400">
-                    <div class="publication-meta">
-                        <span class="publication-year">2020</span>
-                        <span class="publication-status">Publié</span>
-                    </div>
-                    <h3>A motion recognition algorithm using polytopic modeling</h3>
-                    <p class="publication-venue">7th International Conference on Control, Decision and Information Technologies (CoDIT)</p>
-                    <p class="publication-authors"><strong>Pierre Moreau</strong>, David Durand, J&eacute;r&ocirc;me Bosche, Michel Lefranc</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Compétences Techniques</h2>
-            <div class="skills-grid">
-                <div class="skill-category" data-cat="ml" data-aos="flip-left" data-aos-delay="100">
-                    <h3><i class="fas fa-brain"></i> ML &amp; Deep Learning</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">PyTorch</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Keras</span>
-                        <span class="tech-tag">scikit-learn</span>
-                        <span class="tech-tag">XGBoost</span>
-                        <span class="tech-tag">Hugging Face</span>
-                        <span class="tech-tag">CNN / RNN / LSTM</span>
-                        <span class="tech-tag">Transformers</span>
-                        <span class="tech-tag">Reinforcement Learning</span>
-                        <span class="tech-tag">Algos génétiques</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="genai" data-aos="flip-left" data-aos-delay="150">
-                    <h3><i class="fas fa-robot"></i> IA générative &amp; LLM</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Claude API</span>
-                        <span class="tech-tag">OpenAI</span>
-                        <span class="tech-tag">LangChain</span>
-                        <span class="tech-tag">RAG multimodal</span>
-                        <span class="tech-tag">PEFT / LoRA</span>
-                        <span class="tech-tag">Fine-tuning</span>
-                        <span class="tech-tag">Prompt Engineering</span>
-                        <span class="tech-tag">Vector DB</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="vision" data-aos="flip-left" data-aos-delay="200">
-                    <h3><i class="fas fa-eye"></i> Vision par ordinateur</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">UNetR</span>
-                        <span class="tech-tag">SwinUNet</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">PIL / Pillow</span>
-                        <span class="tech-tag">Imagerie médicale</span>
-                        <span class="tech-tag">Segmentation</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="nlp" data-aos="flip-left" data-aos-delay="250">
-                    <h3><i class="fas fa-microphone"></i> NLP &amp; Audio</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">NLTK</span>
-                        <span class="tech-tag">Whisper (STT)</span>
-                        <span class="tech-tag">OCR</span>
-                        <span class="tech-tag">Tokenization</span>
-                        <span class="tech-tag">Embeddings</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="data" data-aos="flip-left" data-aos-delay="300">
-                    <h3><i class="fas fa-chart-line"></i> Data Science &amp; XAI</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">NumPy</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">SciPy</span>
-                        <span class="tech-tag">Matplotlib</span>
-                        <span class="tech-tag">Seaborn</span>
-                        <span class="tech-tag">PCA</span>
-                        <span class="tech-tag">DTW</span>
-                        <span class="tech-tag">SHAP</span>
-                        <span class="tech-tag">LIME</span>
-                        <span class="tech-tag">ANOVA</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="backend" data-aos="flip-left" data-aos-delay="350">
-                    <h3><i class="fas fa-server"></i> Backend &amp; MLOps</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Next.js 15</span>
-                        <span class="tech-tag">Supabase</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Stripe</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="tools" data-aos="flip-left" data-aos-delay="400">
-                    <h3><i class="fas fa-code"></i> Langages &amp; outils</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">JavaScript / TypeScript</span>
-                        <span class="tech-tag">Bash</span>
-                        <span class="tech-tag">HTML / CSS</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">Claude Code / Cursor</span>
-                        <span class="tech-tag">Jupyter</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="ethics" data-aos="flip-left" data-aos-delay="450">
-                    <h3><i class="fas fa-shield-halved"></i> Éthique &amp; conformité IA</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">RGPD</span>
-                        <span class="tech-tag">EU AI Act</span>
-                        <span class="tech-tag">Biais / Équité</span>
-                        <span class="tech-tag">IA explicable</span>
-                        <span class="tech-tag">Quantization / Pruning</span>
-                    </div>
-                </div>
-                <div class="skill-category" data-cat="langs" data-aos="flip-left" data-aos-delay="500">
-                    <h3><i class="fas fa-language"></i> Langues</h3>
-                    <div class="skill-tags">
-                        <span class="tech-tag">Français &mdash; Natif</span>
-                        <span class="tech-tag">Anglais &mdash; B2</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Me contacter</h2>
-            <div class="contact-wrapper">
-                <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
-                    <h3>Connectons-nous</h3>
-                    <p>Je suis toujours intéressé à discuter de nouvelles opportunités en IA et machine learning, particulièrement dans les applications de santé. N'hésitez pas à me contacter !</p>
-                    <div class="contact-methods">
-                        <a href="mailto:moreau.p.02@gmail.com" class="contact-method" data-aos="zoom-in" data-aos-delay="100">
-                            <i class="fas fa-envelope"></i>
-                            <span>moreau.p.02@gmail.com</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pierre-moreau-phd/" target="_blank" class="contact-method" data-aos="zoom-in" data-aos-delay="200">
-                            <i class="fab fa-linkedin"></i>
-                            <span>Profil LinkedIn</span>
-                        </a>
-                        <a href="tel:+33611805832" class="contact-method" data-aos="zoom-in" data-aos-delay="300">
-                            <i class="fas fa-phone"></i>
-                            <span>+33 6 11 80 58 32</span>
-                        </a>
-                        <a href="https://github.com/pierre-moreau-phd" target="_blank" class="contact-method" data-aos="zoom-in" data-aos-delay="400">
-                            <i class="fab fa-github"></i>
-                            <span>Profil GitHub</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" data-aos="fade-up">
-        <div class="container">
-            <p>&copy; 2026 Pierre Moreau. Tous droits réservés.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <script src="script.js" defer></script>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-item">© 2026 Pierre Moreau</span>
+    <span class="footer-item">Docteur ML · Ingénieur IA Santé · conçu à Amiens</span>
+    <a href="#top" class="footer-top">↑ top</a>
+  </div>
+</footer>
 </body>
 </html>
