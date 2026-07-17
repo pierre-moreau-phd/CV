@@ -145,6 +145,7 @@ const CONTENT = {
       items: [
         { no: "01", kind: "Product · in dev", year: "2024 →", name: "Solis — AI-powered ERP", desc: "Full-stack ERP for French artisans & small businesses, in late-stage development: quotes, invoices, credit notes, deposits, e-invoicing (Factur-X), Stripe billing, OCR scanning, voice dictation (Whisper) and a conversational AI assistant. GDPR audit, in-house 'Atelier' design system.", tags: ["Django", "Next.js 15", "Claude API", "Whisper", "Stripe", "Factur-X"], href: "https://noovate.ddns.net/", hrefLabel: "Live demo" },
         { no: "02", kind: "Tool · in real use", year: "2024", name: "Vesta — radiology planning", desc: "Web app I built for a radiologist at Amiens University Hospital to generate the department's monthly schedule — 5 specialties, 6-week rotation, manual locks with automatic regeneration. Fully client-side (React + Vite), persisted in localStorage.", tags: ["React", "Vite", "TypeScript", "Real-world use"], href: "https://pierre-moreau-phd.github.io/Vesta/", hrefLabel: "Live demo" },
+        { no: "03", kind: "Product · closed beta", year: "2025", name: "ReapIt — AI strength-training app", desc: "Mobile app that generates and adapts personalised strength-training programs with AI. Currently in closed beta on Google Play.", tags: ["Mobile", "AI", "Program generation", "Google Play"] },
       ],
     },
     experience: {
@@ -251,6 +252,7 @@ const CONTENT = {
       items: [
         { no: "01", kind: "Produit · en dev", year: "2024 →", name: "Solis — ERP propulsé par l'IA", desc: "ERP full-stack pour artisans & TPE français, en développement avancé : devis, factures, avoirs, acomptes, facturation électronique (Factur-X), abonnements Stripe, OCR, dictée vocale (Whisper) et assistant IA conversationnel. Audit RGPD, design system « Atelier » maison.", tags: ["Django", "Next.js 15", "Claude API", "Whisper", "Stripe", "Factur-X"], href: "https://noovate.ddns.net/", hrefLabel: "Démo live" },
         { no: "02", kind: "Outil · en usage réel", year: "2024", name: "Vesta — planning radiologie", desc: "Application web réalisée pour un radiologue du CHU d'Amiens afin de générer le planning mensuel du service — 5 spécialités, rotation sur 6 semaines, verrous manuels avec régénération automatique. 100 % côté client (React + Vite), persisté en localStorage.", tags: ["React", "Vite", "TypeScript", "Usage réel"], href: "https://pierre-moreau-phd.github.io/Vesta/", hrefLabel: "Démo live" },
+        { no: "03", kind: "Produit · bêta fermée", year: "2025", name: "ReapIt — coach de musculation IA", desc: "Application mobile qui génère et adapte des programmes de musculation personnalisés par IA. Actuellement en bêta fermée sur Google Play.", tags: ["Mobile", "IA", "Génération de programmes", "Google Play"] },
       ],
     },
     experience: {
