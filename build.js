@@ -156,6 +156,7 @@ const CONTENT = {
         { name: "Pacman-AI", desc: "A Deep Q-Network agent learns to play Pac-Man from the raw game state.", tags: ["DQN", "Gymnasium", "Python"], href: "https://github.com/pierre-moreau-phd/Pacman-AI", hrefLabel: "GitHub" },
         { name: "SpaceInvaders-AI", desc: "An RL agent plays Space Invaders with a live visualisation of the neural network as it fires.", tags: ["RL", "Network viz", "NumPy"], href: "https://github.com/pierre-moreau-phd/SpaceInvaders-AI", hrefLabel: "GitHub" },
         { name: "Snake", desc: "Snake mastered by Deep Q-Learning, with a multi-agent split-screen comparison of strategies.", tags: ["Deep Q-Learning", "MLP", "Python"], href: "https://github.com/pierre-moreau-phd/Snake", hrefLabel: "GitHub" },
+        { name: "Petri-AI", desc: "Artificial-life sim: cells driven by tiny neural networks that reproduce, mutate and evolve by natural selection.", tags: ["Neural nets", "Artificial life", "Python"], href: "https://github.com/pierre-moreau-phd/Petri-AI", hrefLabel: "GitHub" },
       ],
     },
     experience: {
@@ -273,6 +274,7 @@ const CONTENT = {
         { name: "Pacman-AI", desc: "Un agent Deep Q-Network apprend à jouer à Pac-Man depuis l'état brut du jeu.", tags: ["DQN", "Gymnasium", "Python"], href: "https://github.com/pierre-moreau-phd/Pacman-AI", hrefLabel: "GitHub" },
         { name: "SpaceInvaders-AI", desc: "Un agent RL joue à Space Invaders avec visualisation en direct du réseau de neurones qui s'active.", tags: ["RL", "Viz réseau", "NumPy"], href: "https://github.com/pierre-moreau-phd/SpaceInvaders-AI", hrefLabel: "GitHub" },
         { name: "Snake", desc: "Snake maîtrisé par Deep Q-Learning, avec comparaison multi-agents en split-screen.", tags: ["Deep Q-Learning", "MLP", "Python"], href: "https://github.com/pierre-moreau-phd/Snake", hrefLabel: "GitHub" },
+        { name: "Petri-AI", desc: "Simulation de vie artificielle : des cellules pilotées par de petits réseaux de neurones se reproduisent, mutent et évoluent par sélection naturelle.", tags: ["Réseaux de neurones", "Vie artificielle", "Python"], href: "https://github.com/pierre-moreau-phd/Petri-AI", hrefLabel: "GitHub" },
       ],
     },
     experience: {
