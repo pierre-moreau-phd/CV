@@ -546,12 +546,13 @@ function work(t) {
       ${w.labsSub ? `<p class="labs-sub">${esc(w.labsSub)}</p>` : ""}
     </div>
     <div class="proj-grid labs-grid">
-      ${list(w.labs, (p) => `<article class="proj-card" data-reveal>
+      ${list(w.labs, (p) => { const slug = (p.href || "").split("/").pop().toLowerCase(); const img = slug ? `img/games/${slug}.jpg` : ""; return `<article class="proj-card labs-card" data-reveal>
+        ${img ? `<div class="labs-bg" style="background-image:url('${img}')"></div>` : ""}
         <h3 class="proj-name">${esc(p.name)}</h3>
         <p class="proj-desc">${esc(p.desc)}</p>
         <div class="tags">${list(p.tags, (tag) => `<span class="tag sm">${esc(tag)}</span>`)}</div>
         ${p.href ? `<a class="link-pill sm" href="${esc(p.href)}" target="_blank" rel="noopener">${esc(p.hrefLabel)} ↗</a>` : ""}
-      </article>`)}
+      </article>`; })}
     </div>` : ""}
   </section>
 </div>`;

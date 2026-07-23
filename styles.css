@@ -509,9 +509,24 @@ a:hover { color: #c9d3ff; }
   line-height: 1.18;
 }
 .labs-sub { font-family: var(--mono); font-size: 13px; color: var(--tx-mute); margin: 0; max-width: 62ch; }
-.labs-grid .proj-card { display: flex; flex-direction: column; }
+.labs-grid .proj-card { position: relative; overflow: hidden; display: flex; flex-direction: column; min-height: 210px; }
+.labs-grid .proj-card > :not(.labs-bg) { position: relative; z-index: 1; }
 .labs-grid .proj-card .tags { margin-bottom: 14px; }
 .labs-grid .proj-card .link-pill { align-self: flex-start; margin-top: auto; }
+.labs-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background-size: cover; background-position: center;
+  transition: transform .5s ease;
+}
+.labs-bg::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(10,12,16,.70) 0%, rgba(10,12,16,.87) 52%, rgba(10,12,16,.95) 100%);
+  transition: background .35s ease;
+}
+.labs-grid .proj-card:hover .labs-bg { transform: scale(1.07); }
+.labs-grid .proj-card:hover .labs-bg::after {
+  background: linear-gradient(180deg, rgba(10,12,16,.48) 0%, rgba(10,12,16,.76) 52%, rgba(10,12,16,.92) 100%);
+}
 
 .pub-row {
   display: grid;
