@@ -148,6 +148,15 @@ const CONTENT = {
         { no: "03", kind: "Tool · in real use", year: "2024", name: "Vesta — radiology planning", desc: "Web app I built for a radiologist at Amiens University Hospital to generate the department's monthly schedule — 5 specialties, 6-week rotation, manual locks with automatic regeneration. Fully client-side (React + Vite), persisted in localStorage.", tags: ["React", "Vite", "TypeScript", "Real-world use"], href: "https://pierre-moreau-phd.github.io/Vesta/", hrefLabel: "Live demo" },
         { no: "04", kind: "Product · closed beta", year: "2025", name: "ReapIt — strength-training app", desc: "Cross-platform Flutter app with a Supabase back-end: offline-first logging (Drift/SQLite) with cloud sync, real-time shared sessions, and a rule-based weekly progression engine. In closed beta on Google Play — AI-assisted plan generation on the roadmap.", tags: ["Flutter", "Supabase", "Realtime", "Offline-first", "Google Play"] },
       ],
+      labsTitle: "Labs — AI game experiments (open source)",
+      labs: [
+        { name: "Flappy-NEAT", desc: "100 agents learn Flappy Bird from scratch through NEAT neuro-evolution; one beats the human record in ~30 generations.", tags: ["NEAT", "Neuro-evolution", "Python"], href: "https://github.com/pierre-moreau-phd/Flappy-NEAT", hrefLabel: "GitHub" },
+        { name: "Penalty-AI", desc: "Shooter vs. keeper trained by self-play, converging to the game-theoretic Nash equilibrium (mixed strategy).", tags: ["Self-play", "RL", "Nash equilibrium"], href: "https://github.com/pierre-moreau-phd/Penalty-AI", hrefLabel: "GitHub" },
+        { name: "Football-AI", desc: "Mini-agents learn 1v1 and team football by reinforcement learning — shooting, dribbling and saving emerge on their own.", tags: ["PPO", "Reinforcement learning", "Python"], href: "https://github.com/pierre-moreau-phd/Football-AI", hrefLabel: "GitHub" },
+        { name: "Pacman-AI", desc: "A Deep Q-Network agent learns to play Pac-Man from the raw game state.", tags: ["DQN", "Gymnasium", "Python"], href: "https://github.com/pierre-moreau-phd/Pacman-AI", hrefLabel: "GitHub" },
+        { name: "SpaceInvaders-AI", desc: "An RL agent plays Space Invaders with a live visualisation of the neural network as it fires.", tags: ["RL", "Network viz", "NumPy"], href: "https://github.com/pierre-moreau-phd/SpaceInvaders-AI", hrefLabel: "GitHub" },
+        { name: "Snake", desc: "Snake mastered by Deep Q-Learning, with a multi-agent split-screen comparison of strategies.", tags: ["Deep Q-Learning", "MLP", "Python"], href: "https://github.com/pierre-moreau-phd/Snake", hrefLabel: "GitHub" },
+      ],
     },
     experience: {
       num: "03", title: "Experience",
@@ -255,6 +264,15 @@ const CONTENT = {
         { no: "02", kind: "Prototype · archivé", year: "2026", name: "Agent IA de rédaction d'ordonnances (Claude + MCP)", desc: "Prototype personnel transformant la dictée vocale (whisper.cpp local) en ordonnances françaises structurées et signées — un agent Claude pilotant un serveur d'outils MCP, dont les formulaires réglementés PERFADOM / OAH, RBAC et contrôle d'interactions. Données 100 % fictives ; archivé.", tags: ["Claude + MCP", "whisper.cpp", "Next.js 15", "Prisma / SQLite", "Docker"] },
         { no: "03", kind: "Outil · en usage réel", year: "2024", name: "Vesta — planning radiologie", desc: "Application web réalisée pour un radiologue du CHU d'Amiens afin de générer le planning mensuel du service — 5 spécialités, rotation sur 6 semaines, verrous manuels avec régénération automatique. 100 % côté client (React + Vite), persisté en localStorage.", tags: ["React", "Vite", "TypeScript", "Usage réel"], href: "https://pierre-moreau-phd.github.io/Vesta/", hrefLabel: "Démo live" },
         { no: "04", kind: "Produit · bêta fermée", year: "2025", name: "ReapIt — appli de musculation", desc: "Appli Flutter multiplateforme avec backend Supabase : suivi de séances offline-first (Drift/SQLite) + sync cloud, séances partagées en temps réel, et moteur de progression hebdomadaire algorithmique. En bêta fermée sur Google Play — génération de programmes par IA prévue.", tags: ["Flutter", "Supabase", "Temps réel", "Offline-first", "Google Play"] },
+      ],
+      labsTitle: "Labs — jeux appris par l'IA (open source)",
+      labs: [
+        { name: "Flappy-NEAT", desc: "100 agents apprennent Flappy Bird de zéro par neuro-évolution NEAT ; l'un bat le record humain en ~30 générations.", tags: ["NEAT", "Neuro-évolution", "Python"], href: "https://github.com/pierre-moreau-phd/Flappy-NEAT", hrefLabel: "GitHub" },
+        { name: "Penalty-AI", desc: "Tireur contre gardien entraînés en self-play, convergeant vers l'équilibre de Nash (stratégie mixte).", tags: ["Self-play", "RL", "Équilibre de Nash"], href: "https://github.com/pierre-moreau-phd/Penalty-AI", hrefLabel: "GitHub" },
+        { name: "Football-AI", desc: "Des mini-agents apprennent le foot en 1v1 et en équipe par renforcement — tir, dribble et parade émergent seuls.", tags: ["PPO", "Apprentissage par renforcement", "Python"], href: "https://github.com/pierre-moreau-phd/Football-AI", hrefLabel: "GitHub" },
+        { name: "Pacman-AI", desc: "Un agent Deep Q-Network apprend à jouer à Pac-Man depuis l'état brut du jeu.", tags: ["DQN", "Gymnasium", "Python"], href: "https://github.com/pierre-moreau-phd/Pacman-AI", hrefLabel: "GitHub" },
+        { name: "SpaceInvaders-AI", desc: "Un agent RL joue à Space Invaders avec visualisation en direct du réseau de neurones qui s'active.", tags: ["RL", "Viz réseau", "NumPy"], href: "https://github.com/pierre-moreau-phd/SpaceInvaders-AI", hrefLabel: "GitHub" },
+        { name: "Snake", desc: "Snake maîtrisé par Deep Q-Learning, avec comparaison multi-agents en split-screen.", tags: ["Deep Q-Learning", "MLP", "Python"], href: "https://github.com/pierre-moreau-phd/Snake", hrefLabel: "GitHub" },
       ],
     },
     experience: {
@@ -518,6 +536,15 @@ function work(t) {
         </div>
       </article>`)}
     </div>
+    ${w.labs ? `<div class="subhead labs-head" data-reveal>${esc(w.labsTitle)}</div>
+    <div class="proj-grid labs-grid">
+      ${list(w.labs, (p) => `<article class="proj-card" data-reveal>
+        <h3 class="proj-name">${esc(p.name)}</h3>
+        <p class="proj-desc">${esc(p.desc)}</p>
+        <div class="tags">${list(p.tags, (tag) => `<span class="tag sm">${esc(tag)}</span>`)}</div>
+        ${p.href ? `<a class="link-pill sm" href="${esc(p.href)}" target="_blank" rel="noopener">${esc(p.hrefLabel)} ↗</a>` : ""}
+      </article>`)}
+    </div>` : ""}
   </section>
 </div>`;
 }
