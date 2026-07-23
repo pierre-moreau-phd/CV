@@ -115,10 +115,10 @@ const CONTENT = {
       cvHref: "Pierre_Moreau_CV_EN.pdf",
     },
     metrics: [
-      { value: "5", target: 5, label: "peer-reviewed publications" },
-      { value: "9+", target: 9, label: "years building software" },
-      { value: "2023", target: 2023, label: "PhD defended · comp. sci." },
-      { value: "3", target: 3, label: "AI products in the works" },
+      { value: "5", target: 5, label: "research papers" },
+      { value: "9+", target: 9, label: "years shipping software" },
+      { value: "3", target: 3, label: "products shipped" },
+      { value: "7", target: 7, label: "open-source AI projects" },
     ],
     about: {
       num: "01", title: "About",
@@ -234,10 +234,10 @@ const CONTENT = {
       cvHref: "Pierre_Moreau_CV_FR.pdf",
     },
     metrics: [
-      { value: "5", target: 5, label: "publications scientifiques" },
-      { value: "9+", target: 9, label: "ans de dev logiciel" },
-      { value: "2023", target: 2023, label: "thèse soutenue · informatique" },
-      { value: "3", target: 3, label: "produits IA en cours" },
+      { value: "5", target: 5, label: "articles de recherche" },
+      { value: "9+", target: 9, label: "ans à livrer du logiciel" },
+      { value: "3", target: 3, label: "produits livrés" },
+      { value: "7", target: 7, label: "projets IA open source" },
     ],
     about: {
       num: "01", title: "À propos",
