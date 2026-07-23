@@ -484,6 +484,31 @@ a:hover { color: #c9d3ff; }
 .proj-card:hover { border-color: var(--line-2); transform: translateY(-3px); }
 .proj-name { font-family: var(--disp); font-weight: 600; font-size: 17px; color: #fff; margin: 0 0 11px; line-height: 1.3; }
 .proj-desc { font-size: 13.5px; line-height: 1.65; color: var(--tx-dim); margin: 0 0 16px; }
+.labs-head {
+  margin-top: clamp(48px, 6vw, 80px);
+  padding-top: clamp(30px, 3.5vw, 44px);
+  border-top: 1px solid var(--line);
+  margin-bottom: clamp(24px, 3vw, 34px);
+}
+.labs-kicker {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+.labs-title {
+  font-family: var(--disp);
+  font-weight: 600;
+  font-size: clamp(22px, 3vw, 31px);
+  letter-spacing: -.015em;
+  color: #fff;
+  margin: 0 0 8px;
+  line-height: 1.18;
+}
+.labs-sub { font-family: var(--mono); font-size: 13px; color: var(--tx-mute); margin: 0; max-width: 62ch; }
 .labs-grid .proj-card { display: flex; flex-direction: column; }
 .labs-grid .proj-card .tags { margin-bottom: 14px; }
 .labs-grid .proj-card .link-pill { align-self: flex-start; margin-top: auto; }

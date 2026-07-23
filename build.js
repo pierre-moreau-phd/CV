@@ -148,7 +148,8 @@ const CONTENT = {
         { no: "03", kind: "Tool · in real use", year: "2024", name: "Vesta — radiology planning", desc: "Web app I built for a radiologist at Amiens University Hospital to generate the department's monthly schedule — 5 specialties, 6-week rotation, manual locks with automatic regeneration. Fully client-side (React + Vite), persisted in localStorage.", tags: ["React", "Vite", "TypeScript", "Real-world use"], href: "https://pierre-moreau-phd.github.io/Vesta/", hrefLabel: "Live demo" },
         { no: "04", kind: "Product · closed beta", year: "2025", name: "ReapIt — strength-training app", desc: "Cross-platform Flutter app with a Supabase back-end: offline-first logging (Drift/SQLite) with cloud sync, real-time shared sessions, and a rule-based weekly progression engine. In closed beta on Google Play — AI-assisted plan generation on the roadmap.", tags: ["Flutter", "Supabase", "Realtime", "Offline-first", "Google Play"] },
       ],
-      labsTitle: "Labs — AI game experiments (open source)",
+      labsTitle: "Games & artificial life, learned by AI",
+      labsSub: "Small open-source experiments — Python code where an agent learns to play or evolve from scratch.",
       labs: [
         { name: "Flappy-NEAT", desc: "100 agents learn Flappy Bird from scratch through NEAT neuro-evolution; one beats the human record in ~30 generations.", tags: ["NEAT", "Neuro-evolution", "Python"], href: "https://github.com/pierre-moreau-phd/Flappy-NEAT", hrefLabel: "GitHub" },
         { name: "Penalty-AI", desc: "Shooter vs. keeper trained by self-play, converging to the game-theoretic Nash equilibrium (mixed strategy).", tags: ["Self-play", "RL", "Nash equilibrium"], href: "https://github.com/pierre-moreau-phd/Penalty-AI", hrefLabel: "GitHub" },
@@ -266,7 +267,8 @@ const CONTENT = {
         { no: "03", kind: "Outil · en usage réel", year: "2024", name: "Vesta — planning radiologie", desc: "Application web réalisée pour un radiologue du CHU d'Amiens afin de générer le planning mensuel du service — 5 spécialités, rotation sur 6 semaines, verrous manuels avec régénération automatique. 100 % côté client (React + Vite), persisté en localStorage.", tags: ["React", "Vite", "TypeScript", "Usage réel"], href: "https://pierre-moreau-phd.github.io/Vesta/", hrefLabel: "Démo live" },
         { no: "04", kind: "Produit · bêta fermée", year: "2025", name: "ReapIt — appli de musculation", desc: "Appli Flutter multiplateforme avec backend Supabase : suivi de séances offline-first (Drift/SQLite) + sync cloud, séances partagées en temps réel, et moteur de progression hebdomadaire algorithmique. En bêta fermée sur Google Play — génération de programmes par IA prévue.", tags: ["Flutter", "Supabase", "Temps réel", "Offline-first", "Google Play"] },
       ],
-      labsTitle: "Labs — jeux appris par l'IA (open source)",
+      labsTitle: "Jeux & vie artificielle, appris par l'IA",
+      labsSub: "Petites expérimentations open source — du code Python où un agent apprend à jouer ou à évoluer de zéro.",
       labs: [
         { name: "Flappy-NEAT", desc: "100 agents apprennent Flappy Bird de zéro par neuro-évolution NEAT ; l'un bat le record humain en ~30 générations.", tags: ["NEAT", "Neuro-évolution", "Python"], href: "https://github.com/pierre-moreau-phd/Flappy-NEAT", hrefLabel: "GitHub" },
         { name: "Penalty-AI", desc: "Tireur contre gardien entraînés en self-play, convergeant vers l'équilibre de Nash (stratégie mixte).", tags: ["Self-play", "RL", "Équilibre de Nash"], href: "https://github.com/pierre-moreau-phd/Penalty-AI", hrefLabel: "GitHub" },
@@ -538,7 +540,11 @@ function work(t) {
         </div>
       </article>`)}
     </div>
-    ${w.labs ? `<div class="subhead labs-head" data-reveal>${esc(w.labsTitle)}</div>
+    ${w.labs ? `<div class="labs-head" data-reveal>
+      <span class="labs-kicker">Labs</span>
+      <h3 class="labs-title">${esc(w.labsTitle)}</h3>
+      ${w.labsSub ? `<p class="labs-sub">${esc(w.labsSub)}</p>` : ""}
+    </div>
     <div class="proj-grid labs-grid">
       ${list(w.labs, (p) => `<article class="proj-card" data-reveal>
         <h3 class="proj-name">${esc(p.name)}</h3>
